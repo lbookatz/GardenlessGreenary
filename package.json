@@ -1,0 +1,35 @@
+{
+  "name": "cautious-carnival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npm start --prefix back-end",
+    "client": "npm start --prefix front-end",
+    "bootstrap": "npm install -d && cd back-end && npm install -d && cd ../front-end && npm install -d",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node back-end/src/server.js && npm start --prefix front-end",
+    "heroku-postbuild": "npm install --prefix front-end && npm run build --prefix front-end && npm install --prefix back-end && npm run build --prefix back-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/final-project-squad/cautious-carnival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/final-project-squad/cautious-carnival/issues"
+  },
+  "homepage": "https://github.com/final-project-squad/cautious-carnival#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}

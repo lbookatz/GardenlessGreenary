@@ -1,0 +1,68 @@
+.addplant {
+    background-image: url("./1x/Asset\ 5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 3px;
+    z-index: 0;
+    
+}
+
+.form-addplant {
+    z-index: 0;
+    padding-top: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.form-addplant input,
+.form-addplant select,
+.form-addplant textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4F513D;
+    box-sizing: border-box;
+    width: 300px;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #888d68;
+}
+
+.form-addplant input:focus,
+.form-addplant select:focus,
+.form-addplant textarea:focus {
+    outline: none;
+}
+
+.form-addplant label {
+    display: block;
+}
+
+.form-addplant textarea {
+    padding-bottom: 78px;
+    overflow: hidden;
+}
+
+.addplant button {
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(223, 226, 203);
+    border: 1px solid #888d68;
+    color: #5f6343;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.addplant button:hover {
+    background-color: #888d68;
+    color: white;
+}
+

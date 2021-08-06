@@ -1,0 +1,68 @@
+
+.st0 {
+    fill:none;
+    stroke:#BAC284;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: dash 4s linear forwards;
+    animation-delay: 4s;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.st1 {
+    fill:none;
+    stroke:#BAC284;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    stroke-dasharray: 750;
+    stroke-dashoffset: 750;
+    animation: dashleaves 8s linear forwards;
+}
+@keyframes dashleaves {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.icons, .titles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.leavesbox {
+    display: flex; 
+    justify-content: center;
+}
+
+.leaves {
+    width: 30%;
+    min-width: 100px;
+}
+
+.peticon, .sunicon, .easyicon {
+    width: 20%;
+    min-width: 100px;
+    margin-bottom: 30px;
+}
+
+p, h2 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.middletext {
+    padding-top: 20px;
+    border-bottom: solid #BAC284;
+    margin-bottom: 20px;
+}

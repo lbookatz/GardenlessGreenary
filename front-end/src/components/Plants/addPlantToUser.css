@@ -1,0 +1,17 @@
+.fav-button, .remove-button {
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(223, 226, 203);
+    border: 1px solid #888d68;
+    color: #5f6343;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.fav-button:hover, .remove-button:hover {
+    background-color: #888d68;
+    color: white;
+}
